@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" scroll="true" overflow-scroll="true" class="iframe-wrapper">
 <br>
   <ion-toolbar>
     <ion-title>
@@ -30,8 +30,8 @@
     <ion-card-content>
     Conheça nossos serviços de Beleza Feminina agendando um horário conosco.    
     <div>
-      <ion-button color="success"><ion-icon name="location-sharp"></ion-icon>Local</ion-button>
-      <ion-button id="present-alert">Agendar</ion-button>
+      <ion-button color="success" (click)="navPag()" ><ion-icon name="location-sharp"></ion-icon>Local</ion-button>
+      <ion-button id="present-alert" (click)="alertPrompt()">Agendar</ion-button>
     </div>
     </ion-card-content>
  

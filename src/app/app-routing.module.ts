@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'alert-cad',
     loadChildren: () => import('./pagina/alert-cad/alert-cad.module').then( m => m.AlertCadPageModule)
+  },  {
+    path: 'local',
+    loadChildren: () => import('./pagina/local/local.module').then( m => m.LocalPageModule)
   }
+
 ];
 @NgModule({
   imports: [
