@@ -25,31 +25,28 @@ navPag() {
 }
 async alertPrompt(){
   const alert = await this.alertCtrl.create({
-    header:'Acesso Restrito!',
+    header:'Agendar Serviço',
     inputs:[
       {
-        placeholder: 'Name',
+        placeholder: 'Nome completo',
       },
       {
-        placeholder: 'Nickname (max 8 characters)',
+        placeholder: 'Email',
         attributes: {
-          maxlength: 8,
+          maxlength: 30,
         },
       },
       {
         type: 'number',
-        placeholder: 'Age',
+        placeholder: 'Telefone',
         min: 1,
-        max: 100,
+        max: 11,
       },
-      {
-        type: 'textarea',
-        placeholder: 'A little about yourself',
-      },
+      
     ],
     buttons:[
       {
-        text:'cancel',
+        text:'Agendar',
         role:'cancel',
         handler:(form)=>{
           console.log(form);
