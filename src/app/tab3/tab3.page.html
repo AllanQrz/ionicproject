@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" >
   <ion-toolbar>
     <ion-title>
       Cliente
@@ -15,18 +15,36 @@
   </ion-header>
   <ion-content color="light">
     <ion-list [inset]="true">
+      
+      
       <ion-item [button]="true">
-        <ion-icon color="success" slot="start" name="list-circle" size="large"></ion-icon>
+        <ion-menu-button  color="success" slot="start" name="list-circle" size="large" id="main-contente"></ion-menu-button>
+
+        <!-- <ion-icon color="success" slot="start" name="list-circle" size="large"></ion-icon> -->
         <ion-label>Agendamentos</ion-label>
         <ion-note slot="end">2</ion-note>
       </ion-item>
+
+      <ion-menu contentId="main-contente">
+        <h1>uhvhfkhfdfkjfdkfdkfj</h1>
+
+      </ion-menu>
+     
       <ion-item [button]="true">
-        <ion-icon color="tertiary" slot="start" name="list-circle" size="large"></ion-icon>
+        <ion-menu-button  color="tertiary" slot="start" name="list-circle" size="large"></ion-menu-button>
+
+        <!-- <ion-icon color="tertiary" slot="start" name="list-circle" size="large"></ion-icon> -->
         <ion-label>Cursos Abertos</ion-label>
         <ion-note slot="end">7</ion-note>
+        
+
       </ion-item>
+     
+     
       <ion-item [button]="true">
-        <ion-icon color="danger" slot="start" name="list-circle" size="large"></ion-icon>
+        <ion-menu-button  color="danger" slot="start" name="list-circle" size="large"></ion-menu-button>
+
+        <!-- <ion-icon color="danger" slot="start" name="list-circle" size="large"></ion-icon> -->
         <ion-label>Cancelamentos</ion-label>
         <ion-note slot="end">3</ion-note>
       </ion-item>
@@ -34,73 +52,97 @@
 
       
       <ion-item [button]="true">
-        <ion-icon color="warning" slot="start" name="list-circle" size="large"></ion-icon>
+        
+        
+        <ion-menu-button  color="warning" slot="start" name="list-circle" size="large" id="main-content"></ion-menu-button>
+        <!-- <ion-icon color="warning"  slot="start" name="list-circle" size="large" id="main-content"></ion-icon> -->
         <ion-label>Lembretes</ion-label>
         <ion-note slot="end">8</ion-note>
       </ion-item>
+      
     </ion-list>
-  
-  
 
 
-    <ion-list [inset]="true">
-      <ion-item [button]="true" detail="false">
-        <div class="unread-indicator-wrapper" slot="start">
-          <div class="unread-indicator"></div>
-        </div>
-        <ion-label>
-          <strong>João Pedro</strong>
-          <ion-text>Manicure</ion-text><br />
-          <ion-note color="medium" class="ion-text-wrap">
-            Você agendou um serviço de manicure na instituição Casa do Menor S.M.A 
-            para o dia 10/10/2023.
-          </ion-note>
-        </ion-label>
-        <div class="metadata-end-wrapper" slot="end">
-          <ion-note color="medium">06:11</ion-note>
-          <ion-icon color="medium" name="chevron-forward"></ion-icon>
-        </div>
-      </ion-item>
-      <ion-item [button]="true" detail="false">
-        <div class="unread-indicator-wrapper" slot="start"></div>
-        <ion-label>
-          <strong>Lembrete</strong>
-          <ion-text>Você pode agendar serviços para amigos.</ion-text><br />
-          <ion-note color="medium" class="ion-text-wrap">Saiba Mais</ion-note>
-        </ion-label>
-        <div class="metadata-end-wrapper" slot="end">
-          <ion-note color="medium">12:44</ion-note>
-          <ion-icon color="medium" name="chevron-forward"></ion-icon>
-        </div>
-      </ion-item>
-      <ion-item [button]="true" detail="false">
-        <div class="unread-indicator-wrapper" slot="start">
-          <div class="unread-indicator"></div>
-        </div>
-        <ion-label>
-          <strong>Lucas Lemos</strong>
-          <ion-text>Maquiagem</ion-text><br />
-          <ion-note color="medium" class="ion-text-wrap">
-            Você agendou um serviço de maquiagem na instituição Senac
-            para o dia 10/10/2023.          </ion-note>
-        </ion-label>
-        <div class="metadata-end-wrapper" slot="end">
-          <ion-note color="medium">Ontem</ion-note>
-          <ion-icon color="medium" name="chevron-forward"></ion-icon>
-        </div>
-      </ion-item>
-      <ion-item [button]="true" detail="false">
-        <div class="unread-indicator-wrapper" slot="start"></div>
-        <ion-label>
-          <strong>Lembrete</strong>
-          <ion-text>Lucas para de ser viado.</ion-text><br />
-          <ion-note color="medium" class="ion-text-wrap">Próxima parada: Japeri</ion-note>
-        </ion-label>
-        <div class="metadata-end-wrapper" slot="end">
-          <ion-note color="medium">Ontem</ion-note>
-          <ion-icon color="medium" name="chevron-forward"></ion-icon>
-        </div>
-      </ion-item>
-    </ion-list>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Lembretes</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      
+        <ion-content>
+      <ion-list [inset]="true">
+        <ion-item [button]="true" detail="false">
+          <div class="unread-indicator-wrapper" slot="start">
+            <div class="unread-indicator"></div>
+          </div>
+          <ion-label>
+            <strong>João Pedro</strong>
+            <ion-text>Manicure</ion-text><br />
+            <ion-note color="medium" class="ion-text-wrap">
+              Você agendou um serviço de manicure na instituição Casa do Menor S.M.A 
+              para o dia 10/10/2023.
+            </ion-note>
+          </ion-label>
+          <div class="metadata-end-wrapper" slot="end">
+            <ion-note color="medium">06:11</ion-note>
+            <ion-icon color="medium" name="chevron-forward"></ion-icon>
+          </div>
+        </ion-item>
+        <ion-item [button]="true" detail="false">
+          <div class="unread-indicator-wrapper" slot="start"></div>
+          <ion-label>
+            <strong>Lembrete</strong>
+            <ion-text>Você pode agendar serviços para amigos.</ion-text><br />
+            <ion-note color="medium" class="ion-text-wrap">Saiba Mais</ion-note>
+          </ion-label>
+          <div class="metadata-end-wrapper" slot="end">
+            <ion-note color="medium">12:44</ion-note>
+            <ion-icon color="medium" name="chevron-forward"></ion-icon>
+          </div>
+        </ion-item>
+        <ion-item [button]="true" detail="false">
+          <div class="unread-indicator-wrapper" slot="start">
+            <div class="unread-indicator"></div>
+          </div>
+          <ion-label>
+            <strong>Lucas Lemos</strong>
+            <ion-text>Maquiagem</ion-text><br />
+            <ion-note color="medium" class="ion-text-wrap">
+              Você agendou um serviço de maquiagem na instituição Senac
+              para o dia 10/10/2023.          </ion-note>
+          </ion-label>
+          <div class="metadata-end-wrapper" slot="end">
+            <ion-note color="medium">Ontem</ion-note>
+            <ion-icon color="medium" name="chevron-forward"></ion-icon>
+          </div>
+        </ion-item>
+        <ion-item [button]="true" detail="false">
+          <div class="unread-indicator-wrapper" slot="start"></div>
+          <ion-label>
+            <strong>Lembrete</strong>
+            <ion-text>Lucas para de ser viado.</ion-text><br />
+            <ion-note color="medium" class="ion-text-wrap">Próxima parada: Japeri</ion-note>
+          </ion-label>
+          <div class="metadata-end-wrapper" slot="end">
+            <ion-note color="medium">Ontem</ion-note>
+            <ion-icon color="medium" name="chevron-forward"></ion-icon>
+          </div>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+     
+      
+    </ion-menu>
+    <!-- <div id="main-content">
+      
+          <!-- <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          
+       
+    </div> -->
+
+  
   </ion-content>
 </ion-content>

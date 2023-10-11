@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  url: any;
+
+  constructor(private domSanitizer: DomSanitizer) {}
+
+  cursos() {
+    this.url = this.domSanitizer.bypassSecurityTrustResourceUrl(
+      'https://www.rj.senac.br/cursos/beleza-e-bem-estar'
+    )
+  }
+
 
 }
