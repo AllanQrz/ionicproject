@@ -19,7 +19,28 @@ body{
     border-radius: 10px;
     height:400px;
 }
-#card1{
-   
+.card1{
+background-image: url("https://ogimg.infoglobo.com.br/in/25303048-ccd-a5d/FT1086A/DSC_4060.jpg");   
+background-size: cover;}
 
+
+#card1{
+background-image:url("https://cursoeprofissao.com.br/wp-content/uploads/2019/11/barbeiromasculino-1024x640.jpeg");
+}
+h3{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.text{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    justify-content: center;
+   font-weight: bolder;
+  
+}
+#back{
+    background-color: black;
+    opacity: 0.5;
 }
