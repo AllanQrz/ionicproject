@@ -9,9 +9,19 @@ const routes: Routes = [
   {
     path: 'alert-cad',
     loadChildren: () => import('./pagina/alert-cad/alert-cad.module').then( m => m.AlertCadPageModule)
-  },  {
+  },
+  {
     path: 'local',
     loadChildren: () => import('./pagina/local/local.module').then( m => m.LocalPageModule)
+  },
+ 
+  {
+    path: 'local2',
+    loadChildren: () => import('./local2/local2.module').then( m => m.Local2PageModule)
+  },
+  {
+    path: 'local3',
+    loadChildren: () => import('./local3/local3.module').then( m => m.Local3PageModule)
   }
 
 ];

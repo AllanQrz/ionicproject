@@ -21,7 +21,14 @@ export class Tab2Page implements OnInit {
 navPag() {
 
   // Use o método navigateForward para navegar para a nova página
-  this.navCtrl.navigateForward('local')
+  this.navCtrl.navigateForward('local');
+}
+navPag2(){
+this.navCtrl.navigateForward('local2');
+}
+
+navPag3(){
+this.navCtrl.navigateForward('local3')
 }
 async alertPrompt(){
   const alert = await this.alertCtrl.create({
