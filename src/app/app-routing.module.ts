@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'local3',
     loadChildren: () => import('./local3/local3.module').then( m => m.Local3PageModule)
+  },  {
+    path: 'agendar',
+    loadChildren: () => import('./agendar/agendar.module').then( m => m.AgendarPageModule)
   }
+
 
 ];
 @NgModule({

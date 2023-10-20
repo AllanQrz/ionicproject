@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NavController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
+import { AgendarPage } from '../agendar/agendar.page';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -12,7 +14,7 @@ export class Tab2Page implements OnInit {
 
   url: any;
 
-  constructor(private navCtrl: NavController, private alertCtrl: AlertController) {}
+  constructor(private navCtrl: NavController, private alertCtrl: AlertController,private modalCtrl: ModalController) {}
 
   ngOnInit(): void {
     
@@ -49,6 +51,10 @@ async alertPrompt(){
         min: 1,
         max: 11,
       },
+      {
+        type:'datetime-local'
+        
+      },
       
     ],
     buttons:[
@@ -65,6 +71,14 @@ async alertPrompt(){
   )
   await alert.present();
 }
+Agendar(){
+  this.modalCtrl.create({
+    component: AgendarPage
+  }).then(modal=>{
+    modal.present();
+  }
+    )
 
 
+}
 }
