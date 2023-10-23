@@ -25,6 +25,14 @@ const routes: Routes = [
   },  {
     path: 'agendar',
     loadChildren: () => import('./agendar/agendar.module').then( m => m.AgendarPageModule)
+  },
+  {
+    path: 'agendarbarb',
+    loadChildren: () => import('./agendarbarb/agendarbarb.module').then( m => m.AgendarbarbPageModule)
+  },
+  {
+    path: 'agendamentos',
+    loadChildren: () => import('./cliente/agendamentos/agendamentos.module').then( m => m.AgendamentosPageModule)
   }
 
 
