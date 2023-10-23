@@ -72,6 +72,7 @@ async alertPrompt(){
 }
 Agendar(){
   this.modalCtrl.create({
+    
     component: AgendarPage
   }).then(modal=>{
     modal.present();

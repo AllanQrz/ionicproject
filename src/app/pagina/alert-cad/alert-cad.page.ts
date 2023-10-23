@@ -7,6 +7,7 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./alert-cad.page.scss'],
 })
 export class AlertCadPage implements OnInit {
+  
 
   constructor(private alert: AlertController) { }
 
