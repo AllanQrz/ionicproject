@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NavController } from '@ionic/angular';
-import { AlertController } from '@ionic/angular';<<<<<<< master
+import { AlertController } from '@ionic/angular';
 import { AgendarPage } from '../agendar/agendar.page';
 import { ModalController } from '@ionic/angular';
 import { ActionSheetController } from '@ionic/angular';
+import { AgendarbarbPage } from '../agendarbarb/agendarbarb.page';
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -15,7 +16,7 @@ export class Tab2Page implements OnInit {
 
   url: any;
   constructor(private navCtrl: NavController, private alertCtrl: AlertController,private modalCtrl: ModalController) {}
-  constructor(private navCtrl: NavController, private alertCtrl: AlertController, private actionSheetCtrl: ActionSheetController) {}
+ 
 
   ngOnInit(): void {
     
@@ -78,30 +79,15 @@ Agendar(){
   }
     )
 
-canDismiss = async () => {
-  const actionSheet = await this.actionSheetCtrl.create({
-    header: 'Are you sure?',
-    buttons: [
-      {
-        text: 'Yes',
-        role: 'confirm',
-      },
-      {
-        text: 'No',
-        role: 'cancel',
-      },
-    ],
-  });
-
-  actionSheet.present();
-
-  const { role } = await actionSheet.onWillDismiss();
-
-  return role === 'confirm';
-};
-  
 }
+Agendarbarb(){
+  this.modalCtrl.create({
+    component: AgendarbarbPage
+  }).then(modal=>{
+    modal.present();
+  }
+    )
 
 }
-
+}
 
