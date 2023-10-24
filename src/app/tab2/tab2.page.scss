@@ -10,7 +10,24 @@
 }
 
 .card3{
-    background-image: url('https://content.portaldofranchising.com.br/wp-content/uploads/2020/05/18181536/franquia-de-sal%C3%A3o-de-beleza.jpg') ;
+    background-image: url('https://www.dompel.com/igc/uploadAr/FileProcessingScripts/PHP/UploadedFiles/2peoplehome1618984152-12284.png') ;
+    background-size: cover;
+    
+}
+.card4{
+background-image: url('https://lojascomhistoria.pt/medium/uploads/images/fc75e1991085eb2d6cd2696f564ed171.jpg');
+background-size: cover;
+
+}
+
+.card5{
+    background-image: url('https://i.ytimg.com/vi/jlDpK_kB8ck/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8jaygT8VSp01LsNqparwJdYJ7pw');
+    background-size: cover;
+    
+}
+
+.card6{
+    background-image: url('https://preview.free3d.com/img/2018/06/2202374521955026249/a86qfvnu.jpg');
     background-size: cover;
     
 }
@@ -51,21 +68,30 @@
 .content {
     
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.4); /* Define a cor de fundo do conteúdo com uma opacidade */
+    background-color: rgb(0, 0, 0,0.4); /* Define a cor de fundo do conteúdo com uma opacidade */
     padding: 20px;
     text-align: center;
     
   }
   .text{
-    color:white;
+    color:rgb(255, 253, 253);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
+    font-size: 20px;
     justify-content: center;
     font-weight: bolder;
     text-align: center;
     font-style: oblique;
-    font-style: bold;
-    
-    
+    font-style: bold; 
   
+}
+.titulo{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+}
+
+.t{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 26px;
+  
+   background-color: #f4f4f4; 
 }
