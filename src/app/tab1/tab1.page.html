@@ -28,7 +28,15 @@
        <div class="ion-text-center">
          <img src="assets/Barbearia.png" alt="" id="img1">
          <h3>Barbearia</h3>
-         <ion-button>Saiba Mais</ion-button>
+         <ion-button (click)="setOpen(true)">Click Me</ion-button>
+         <ion-alert
+           [isOpen]="isAlertOpen"
+           header="Barbearia"
+           message="Nosso  App Fornece serviços de Barbearia gratuitamente com Parceiras
+           com instituições!"
+           [buttons]="alertButtons"
+           (didDismiss)="setOpen(false)"
+         ></ion-alert>
        </div>
        <h2></h2>
        <h3></h3>
@@ -43,7 +51,14 @@
        <div class="ion-text-center">
          <img src="assets/mulher.jpg" alt="" id="img1">
          <h3>Beleza</h3>
-         <ion-button>Saiba Mais</ion-button>
+         <ion-button id="present-alert">Saiba Mais</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="Barbearia"
+  message="Nosso  App Fornece serviços de Beleza gratuitamente com Parceiras
+  com instituições!"
+  [buttons]="alertButtons"
+></ion-alert>
          <h3></h3>
          <h2></h2>
        </div>
@@ -67,11 +82,5 @@
     
   </ion-card>
 
- 
-
-  
- 
- 
- 
  </ion-content>
  
