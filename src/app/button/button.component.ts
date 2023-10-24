@@ -1,6 +1,6 @@
 import { Input, Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
@@ -8,13 +8,16 @@ import { NavController } from '@ionic/angular';
 })
 export class ButtonComponent implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private menuCtrl: MenuController) { }
   @Input() public url: string = '';
   ngOnInit() { }
 
-  navigate(url: string) {
-    this.navCtrl.navigateForward(url);
-
-
+  openFirstMenu() {
+    /**
+     * Open the menu by menu-id
+     * We refer to the menu using an ID
+     * because multiple "start" menus exist.
+     */
+    this.menuCtrl.open('first-menu');
   }
 }

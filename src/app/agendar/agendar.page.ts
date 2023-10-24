@@ -33,7 +33,7 @@ export class AgendarPage implements OnInit {
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Agendamento Marcado',
-      subHeader: 'Comfira seu E-mail para comfirmar a data e o horário',
+      subHeader: 'Confira seu E-mail para comfirmar a data e o horário',
       
       buttons: ['OK'],
     });

@@ -33,6 +33,18 @@ const routes: Routes = [
   {
     path: 'agendamentos',
     loadChildren: () => import('./cliente/agendamentos/agendamentos.module').then( m => m.AgendamentosPageModule)
+  },
+  {
+    path: 'nvc',
+    loadChildren: () => import('./cliente/nvc/nvc.module').then( m => m.NvcPageModule)
+  },
+  {
+    path: 'cancel',
+    loadChildren: () => import('./cliente/cancel/cancel.module').then( m => m.CancelPageModule)
+  },
+  {
+    path: 'lembretes',
+    loadChildren: () => import('./cliente/lembretes/lembretes.module').then( m => m.LembretesPageModule)
   }
 
 

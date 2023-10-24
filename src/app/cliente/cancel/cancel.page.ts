@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
-
 @Component({
-  selector: 'app-agendamentos',
-  templateUrl: './agendamentos.page.html',
-  styleUrls: ['./agendamentos.page.scss'],
+  selector: 'app-cancel',
+  templateUrl: './cancel.page.html',
+  styleUrls: ['./cancel.page.scss'],
 })
-export class AgendamentosPage implements OnInit {
+export class CancelPage implements OnInit {
 
   constructor(private modalCtrl: ModalController) { }
 
@@ -18,5 +17,4 @@ export class AgendamentosPage implements OnInit {
     this.modalCtrl.dismiss();
   
   }
-
 }
