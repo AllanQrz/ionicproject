@@ -1,4 +1,5 @@
 .card1{
+ 
     background-image: url('https://static.wixstatic.com/media/9d7aac_b30b120cf9214dc686ffb5ed1c623cc3~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9d7aac_b30b120cf9214dc686ffb5ed1c623cc3~mv2.jpg');
     background-size: cover;
 }
@@ -45,4 +46,26 @@
     color: aliceblue;
     font-size: large;
     font: bold;
+}
+
+.content {
+    
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.4); /* Define a cor de fundo do conteúdo com uma opacidade */
+    padding: 20px;
+    text-align: center;
+    
+  }
+  .text{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+    font-style: oblique;
+    font-style: bold;
+    
+    
+  
 }
