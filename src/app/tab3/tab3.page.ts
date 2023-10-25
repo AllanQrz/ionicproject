@@ -5,6 +5,7 @@ import { NavController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { AgendamentosPage } from '../cliente/agendamentos/agendamentos.page';
 import { CancelPage } from '../cliente/cancel/cancel.page';
+import { LembretesPage } from '../cliente/lembretes/lembretes.page';
 import { NvcPage } from '../cliente/nvc/nvc.page';
 @Component({
   selector: 'app-tab3',
@@ -53,7 +54,7 @@ export class Tab3Page {
   Lembre(){
     this.modalCtrl.create({
       
-      component: CancelPage
+      component: LembretesPage
     }).then(modal=>{
       modal.present();
     }
