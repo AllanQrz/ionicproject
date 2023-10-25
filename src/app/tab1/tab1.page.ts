@@ -15,6 +15,16 @@ export class Tab1Page {
     this.isAlertOpen = isOpen;
   }
 
+
+  
+  setOpen(isOpen: boolean) {
+    this.isAlertOpen = isOpen;
+    
+
+    
+  }
+
+  
 }
 
 
