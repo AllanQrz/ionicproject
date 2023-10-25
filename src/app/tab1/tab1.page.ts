@@ -6,12 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
   isAlertOpen = false;
   public alertButtons = ['OK'];
 
+
+  
+  
+  isAlertOpen = false;
+  public alertButtons = ['OK'];
+
+
+  
   setOpen(isOpen: boolean) {
     this.isAlertOpen = isOpen;
+    
+    
   }
 }
 
