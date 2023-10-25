@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
-
 @Component({
-  selector: 'app-agendamentos',
-  templateUrl: './agendamentos.page.html',
-  styleUrls: ['./agendamentos.page.scss'],
+  selector: 'app-lembretes',
+  templateUrl: './lembretes.page.html',
+  styleUrls: ['./lembretes.page.scss'],
 })
-export class AgendamentosPage implements OnInit {
+export class LembretesPage implements OnInit {
 
   constructor(private modalCtrl: ModalController) { }
 

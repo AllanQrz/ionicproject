@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MenuController } from '@ionic/angular';
-
+import { NavController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { AgendamentosPage } from '../cliente/agendamentos/agendamentos.page';
+import { CancelPage } from '../cliente/cancel/cancel.page';
+import { NvcPage } from '../cliente/nvc/nvc.page';
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
@@ -11,40 +15,53 @@ export class Tab3Page {
 
   url: any;
 
-  constructor(private domSanitizer: DomSanitizer, private menuCtrl: MenuController) {}
+  constructor(private domSanitizer: DomSanitizer, private menuCtrl: MenuController, private navCtrl: NavController, private modalCtrl: ModalController) {}
 
-  cursos() {
-    this.url = this.domSanitizer.bypassSecurityTrustResourceUrl(
-      'https://www.rj.senac.br/cursos/beleza-e-bem-estar'
-    )
+  Agendamen(){
+    this.modalCtrl.create({
+      
+      component: AgendamentosPage
+    }).then(modal=>{
+      modal.present();
+    }
+      )
+  
   }
 
-  openFirstMenu() {
-    /**
-     * Open the menu by menu-id
-     * We refer to the menu using an ID
-     * because multiple "start" menus exist.
-     */
-    this.menuCtrl.open('first-menu');
+  Novocu(){
+    this.modalCtrl.create({
+      
+      component: NvcPage
+    }).then(modal=>{
+      modal.present();
+    }
+      )
+  
   }
 
-  openSecondMenu() {
-    /**
-     * Open the menu by menu-id
-     * We refer to the menu using an ID
-     * because multiple "start" menus exist.
-     */
-    this.menuCtrl.open('second-menu');
+  Cancel(){
+    this.modalCtrl.create({
+      
+      component: CancelPage
+    }).then(modal=>{
+      modal.present();
+    }
+      )
+  
   }
 
-  openEndMenu() {
-    /**
-     * Open the menu by side
-     * We can refer to the menu by side
-     * here because only one "end" menu exists
-     */
-    this.menuCtrl.open('end');
+  Lembre(){
+    this.modalCtrl.create({
+      
+      component: CancelPage
+    }).then(modal=>{
+      modal.present();
+    }
+      )
+  
   }
+
+
 }
 
 

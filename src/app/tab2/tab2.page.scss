@@ -1,4 +1,5 @@
 .card1{
+ 
     background-image: url('https://static.wixstatic.com/media/9d7aac_b30b120cf9214dc686ffb5ed1c623cc3~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9d7aac_b30b120cf9214dc686ffb5ed1c623cc3~mv2.jpg');
     background-size: cover;
 }
@@ -25,10 +26,29 @@ background-size: cover;
     
 }
 
+
+
+
+
 .card6{
-    background-image: url('https://preview.free3d.com/img/2018/06/2202374521955026249/a86qfvnu.jpg');
+    background-image: url('https://facei.edu.br/wp-content/uploads/2020/04/pos-massoterapia-facei-faculdade-einstein1.jpg') ;
     background-size: cover;
     
+}
+
+
+
+
+
+
+
+#back{
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: large;
+    font: bold;
 }
 
 .content {
