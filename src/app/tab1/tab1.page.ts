@@ -10,6 +10,7 @@ export class Tab1Page {
 
   isAlertOpen = false;
   public alertButons = ['OK'];
+  public alertButtons = ['OK'];
 
 
 
