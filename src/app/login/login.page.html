@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button slot="end" (click)="fecharModal()">Fechar</ion-button>
+    <ion-title>Login</ion-title>
+
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form (ngSubmit)="login(f)" #f="ngForm">
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input
+        [(ngModel)]="datas.email"
+        name="email"
+        type="email"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input
+        [(ngModel)]="datas.password"
+        name="password"
+        type="password"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Entrar</ion-button>
+  </form>
+</ion-content>

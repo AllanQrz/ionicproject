@@ -7,17 +7,25 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
- 
+
   isAlertOpen = false;
   public alertButons = ['OK'];
+
 
 
   
   setOpen(isOpen: boolean) {
     this.isAlertOpen = isOpen;
-    
-    
   }
+
+
+
+  
+
+
+
+
+
 }
 
 
