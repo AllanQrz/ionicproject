@@ -1,194 +1,192 @@
 <ion-header [translucent]="true">
- 
- 
- 
   <ion-toolbar>
-   
-    <ion-title  class="t">
-      Serviços
-    </ion-title>
+    <ion-title class="t"> Serviços </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" scroll="true" overflow-scroll="true" class="iframe-wrapper">
+<ion-content
+  [fullscreen]="true"
+  scroll="true"
+  overflow-scroll="true"
+  class="iframe-wrapper"
+>
   <div class="div">
-  <br>
-  <ion-toolbar color="dark">
-    <ion-title color="dark" >
-      <div class="fundo"><h2><b>Beleza</b></h2></div>
-    </ion-title>
-  </ion-toolbar>
+    <br />
+    <ion-toolbar color="dark">
+      <ion-title color="dark">
+        <div class="fundo">
+          <h2><b>Beleza</b></h2>
+        </div>
+      </ion-title>
+    </ion-toolbar>
 
-
- 
- 
- 
-
-  <ion-card class="card1">
-   
-    <ion-card-header>
-      <ion-card-title class="titulo"><img src="assets/senac-logo.png" alt="" width="80px"></ion-card-title>
-
-     
-
-    </ion-card-header>
-    <div class="content">
-    <h1 class="text"><b>Conheça nossos serviços de Beleza Feminina agendando um horário .</b></h1>
-    <h2 class="text">Unidade Nova Iguaçu</h2>
-    </div>
-
-    <ion-card-content>
- 
-
-     
-      <div>
-       
-        <ion-button color="success" (click)="navPag()">
-          <ion-icon name="location-sharp"></ion-icon>Local
-        </ion-button>
-        <ion-button (click)="Agendar()">Agendar</ion-button>
+    <ion-card class="card1">
+      <ion-card-header>
+        <ion-card-title class="titulo"
+          ><img src="assets/senac-logo.png" alt="" width="80px"
+        /></ion-card-title>
+      </ion-card-header>
+      <div class="content">
+        <h1 class="text">
+          <b
+            >Conheça nossos serviços de Beleza Feminina agendando um horário
+            .</b
+          >
+        </h1>
+        <h2 class="text">Unidade Nova Iguaçu</h2>
       </div>
-     
-    </ion-card-content> 
 
+      <ion-card-content>
+        <div>
+          <ion-button color="success" (click)="navPag()">
+            <ion-icon name="location-sharp"></ion-icon>Local
+          </ion-button>
+          <ion-button (click)="Agendar()">Agendar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
 
-  </ion-card>
+    <ion-card class="card2">
+      <ion-card-header>
+        <ion-card-title class="titulo"
+          ><img src="assets/logo_embelleze.avif" alt="" width="155px"
+        /></ion-card-title>
+      </ion-card-header>
+      <div class="content">
+        <h1 class="text">
+          <b
+            >Conheça nossos serviços de Beleza Feminina agendando um horário
+            conosco.</b
+          >
+        </h1>
+        <h2 class="text">Unidade Nova Iguaçu</h2>
+      </div>
+      <ion-card-content>
+        <div>
+          <ion-button color="success" (click)="navPag3()">
+            <ion-icon name="location-sharp"></ion-icon>Local
+          </ion-button>
+          <ion-button (click)="Agendar()">Agendar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
 
+    <ion-card class="card3">
+      <ion-card-header>
+        <ion-card-title class="titulo"
+          ><img src="assets/logo_casamenor2.png" alt="" width="155px"
+        /></ion-card-title>
+      </ion-card-header>
+      <div class="content">
+        <h1 class="text">
+          <b
+            >Conheça nossos serviços de Beleza Feminina agendando um horário
+            conosco.</b
+          >
+        </h1>
+        <h2 class="text">Unidade Miguel colto</h2>
+      </div>
+      <ion-card-content>
+        <div>
+          <ion-button color="success" (click)="navPag2()">
+            <ion-icon name="location-sharp"></ion-icon>Local
+          </ion-button>
+          <ion-button (click)="Agendar()">Agendar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
 
+    <ion-toolbar color="dark">
+      <ion-title color="dark">
+        <div class="fundo">
+          <h2><b>Barbeiro</b></h2>
+        </div>
+      </ion-title>
+    </ion-toolbar>
 
-  <ion-card class="card2">
-    <ion-card-header>
-      <ion-card-title class="titulo"><img src="assets/logo_embelleze.avif" alt="" width="155px"></ion-card-title>
+    <ion-card class="card4">
+      <ion-card-header>
+        <ion-card-title class="titulo"
+          ><img src="assets/senac-logo.png" alt="" width="80px"
+        /></ion-card-title>
+      </ion-card-header>
+      <div class="content">
+        <h1 class="text">
+          <b
+            >Conheça nossos serviços de Barbearia agendando um horário
+            conosco.</b
+          >
+        </h1>
+        <h2 class="text">Unidade Nova Iguaçu</h2>
+      </div>
+      <ion-card-content>
+        <div>
+          <ion-button color="success" (click)="navPag()">
+            <ion-icon name="location-sharp"></ion-icon>Local
+          </ion-button>
 
-    </ion-card-header>
-    <div class="content">
-    <h1 class="text"><b>Conheça nossos serviços de Beleza Feminina agendando um horário conosco.</b></h1>
-    <h2 class="text">Unidade Nova Iguaçu</h2>
+          <ion-button (click)="Agendarbarb()">Agendar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="card5">
+      <ion-card-header>
+        <ion-card-title class="titulo"
+          ><img src="assets/logo_casamenor2.png" alt="" width="155px"
+        /></ion-card-title>
+      </ion-card-header>
+
+      <div class="content">
+        <h1 class="text">
+          <b
+            >Conheça nossos serviços de Barbearia agendando um horário
+            conosco.</b
+          >
+        </h1>
+        <h2 class="text">Unidade Miguel couto</h2>
+      </div>
+      <ion-card-content>
+        <div>
+          <ion-button color="success" (click)="navPag2()">
+            <ion-icon name="location-sharp"></ion-icon>Local
+          </ion-button>
+          <ion-button (click)="Agendarbarb()">Agendar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-toolbar color="dark">
+      <ion-title color="dark">
+        <div class="fundo">
+          <h2><b>Bem-estar</b></h2>
+        </div>
+      </ion-title>
+    </ion-toolbar>
+
+    <ion-card class="card6">
+      <ion-card-header>
+        <ion-card-title class="titulo"
+          ><img src="assets/senac-logo.png" alt="" width="80px"
+        /></ion-card-title>
+      </ion-card-header>
+      <div class="content">
+        <h1 class="text">
+          <b
+            >Conheça nossos serviços de Massoterapia agendando um horário
+            conosco.</b
+          >
+        </h1>
+        <h2 class="text">Unidade Nova Iguaçu</h2>
+      </div>
+      <ion-card-content>
+        <div>
+          <ion-button color="success" (click)="navPag()">
+            <ion-icon name="location-sharp"></ion-icon>Local
+          </ion-button>
+          <ion-button (click)="Agendar()">Agendar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
   </div>
-    <ion-card-content>
-      <div>
-        <ion-button color="success" (click)="navPag3()">
-          <ion-icon name="location-sharp"></ion-icon>Local
-        </ion-button>
-        <ion-button (click)="Agendar()">Agendar</ion-button>
-      </div>
-    </ion-card-content>
-  </ion-card>
-
-
-
-  <ion-card class="card3">
-    <ion-card-header>
-      <ion-card-title class="titulo"><img src="assets/logo_casamenor2.png" alt="" width="155px"></ion-card-title>
-
-    </ion-card-header>
-    <div class="content">
-    <h1 class="text"><b>Conheça nossos serviços de Beleza Feminina agendando um horário conosco.</b></h1>
-    <h2 class="text">Unidade Miguel colto</h2>
-  </div>
-    <ion-card-content>
-
-    
-      <div>
-        <ion-button color="success" (click)="navPag2()">
-          <ion-icon name="location-sharp"></ion-icon>Local
-        </ion-button>
-        <ion-button (click)="Agendar()">Agendar</ion-button>
-      </div>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-toolbar color="dark">
-    <ion-title color="dark" >
-      <div class="fundo"><h2><b>Barbeiro</b></h2></div>
-    </ion-title>
-  </ion-toolbar>
-
-  <ion-card class="card4">
-    <ion-card-header>
-      <ion-card-title class="titulo"><img src="assets/senac-logo.png" alt="" width="80px"></ion-card-title>
-    </ion-card-header>
-    <div class="content">
-    <h1 class="text"><b>Conheça nossos serviços de Barbearia agendando um horário conosco.</b></h1>
-    <h2 class="text">Unidade Nova Iguaçu</h2>
-  </div>
-    <ion-card-content>
-
-      
- 
-      <div>
-        <ion-button color="success" (click)="navPag()">
-          <ion-icon name="location-sharp"></ion-icon>Local
-        </ion-button>
-
-        <ion-button (click)="Agendarbarb()">Agendar</ion-button>
-      </div>
-    </ion-card-content>
-  </ion-card>
-
- 
-
-
-
- 
-  <ion-card class="card5">
-    <ion-card-header>
-      <ion-card-title class="titulo"><img src="assets/logo_casamenor2.png" alt="" width="155px"></ion-card-title>
-
-    </ion-card-header>
- 
-
-
-
-    
-    
-    <div class="content">
-    <h1 class="text"><b>Conheça nossos serviços de Barbearia agendando um horário conosco.</b></h1>
-    <h2 class="text">Unidade Miguel couto</h2>
-  </div>
-    <ion-card-content>
-      
- 
-      <div>
-        <ion-button color="success" (click)="navPag2()">
-          <ion-icon name="location-sharp"></ion-icon>Local
-        </ion-button>
-        <ion-button (click)="Agendarbarb()">Agendar</ion-button>
-      </div>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-toolbar color="dark">
-    <ion-title color="dark" >
-      <div class="fundo"><h2><b>Bem-estar</b></h2></div>
-    </ion-title>
-  </ion-toolbar>
-
-  <ion-card class="card6">
-    <ion-card-header>
-      <ion-card-title class="titulo"><img src="assets/senac-logo.png" alt="" width="80px"></ion-card-title>
-
-    </ion-card-header>
-    <div class="content">
-    <h1 class="text"><b>Conheça nossos serviços de Massoterapia agendando um horário conosco.</b></h1>
-    <h2 class="text">Unidade Nova Iguaçu</h2>
-  </div>
-    <ion-card-content>
- 
-
-     
- 
-      <div>
-        <ion-button color="success" (click)="navPag()">
-          <ion-icon name="location-sharp"></ion-icon>Local
-        </ion-button>
-        <ion-button (click)="Agendar()">Agendar</ion-button>
-      </div>
-    </ion-card-content>
-  </ion-card>
-</div>
 </ion-content>
-
-
-
-

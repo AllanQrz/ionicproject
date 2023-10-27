@@ -46,7 +46,15 @@ const routes: Routes = [
   {
     path: 'lembretes',
     loadChildren: () => import('./cliente/lembretes/lembretes.module').then( m => m.LembretesPageModule)
+  },  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
+
 
  
 
